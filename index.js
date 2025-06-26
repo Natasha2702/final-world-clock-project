@@ -10,7 +10,6 @@ denmarkDate.innerHTML = moment().format("MMMM Do YYYY");
 denmarkTime.innerHTML =`${denmarkElement.format("h:mm:ss  [<small>]A[</small>]")}`;
 }
 
-
 //SWITZERLAND
 let switzerland = document.querySelector("#switzerland");
 if (switzerland){
@@ -22,16 +21,15 @@ switzerlandTime.innerHTML =`${switzerlandElement.format("h:mm:ss [<small>]A[</sm
 }
 
 
-//Melbourne
-let melbourne = document.querySelector("#melbourne");
-if(melbourne){
-let melbourneTime = melbourne.querySelector(".time");
-let melbourneDate = melbourne.querySelector(".date");
-let melbourneElement=moment().tz("Australia/Melbourne");
-melbourneDate.innerHTML = moment().format("MMMM Do YYYY");
-melbourneTime.innerHTML =`${melbourneElement.format("h:mm:ss  [<small>]A[</small>]")} `;
+//Hong KONG
+let hongKong = document.querySelector("#hong-kong");
+if(hongKong){
+let hongkongTime = hongKong.querySelector(".time");
+let hongkongDate = hongKong.querySelector(".date");
+let melbourneElement=moment().tz("Asia/Hong_Kong");
+hongkongDate.innerHTML = moment().format("MMMM Do YYYY");
+hongkongTime.innerHTML =`${melbourneElement.format("h:mm:ss  [<small>]A[</small>]")} `;
 }}
-
 
 //multiple cities
 
